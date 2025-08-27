@@ -1,0 +1,2 @@
+- Add Element licencing to the README.
+- Link to proper pages when it comes to Documentation (Help page) and to download desktop builds (EventIndexPanel)

@@ -1,0 +1,13 @@
+--- 
++++ 
+@@ -12,8 +12,8 @@
+ import fs from "node:fs";
+ import { randomUUID } from "node:crypto";
+ 
+-const LEGACY_PROTOCOL = "element";
+-const SEARCH_PARAM = "element-desktop-ssoid";
++const LEGACY_PROTOCOL = "mim";
++const SEARCH_PARAM = "mim-desktop-ssoid";
+ const STORE_FILE_NAME = "sso-sessions.json";
+ 
+ // we getPath userData before electron-main changes it, so this is the default value

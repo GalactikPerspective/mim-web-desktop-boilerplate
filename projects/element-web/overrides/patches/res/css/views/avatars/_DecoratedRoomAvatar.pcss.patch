@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -51,7 +51,7 @@
+     }
+ 
+     .mx_DecoratedRoomAvatar_icon_online::before {
+-        background-color: $accent;
++        background-color: $presence-online;
+     }
+ 
+     .mx_DecoratedRoomAvatar_icon_away::before {

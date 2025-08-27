@@ -1,0 +1,20 @@
+--- 
++++ 
+@@ -51,7 +51,7 @@
+     updateURL: string;
+ }
+ 
+-const SSO_ID_KEY = "element-desktop-ssoid";
++const SSO_ID_KEY = "mim-desktop-ssoid";
+ 
+ function platformFriendlyName(): string {
+     // used to use window.process but the same info is available here
+@@ -436,7 +436,7 @@
+ 
+     public getSSOCallbackUrl(fragmentAfterLogin?: string): URL {
+         const url = super.getSSOCallbackUrl(fragmentAfterLogin);
+-        url.protocol = "element";
++        url.protocol = "mim";
+         url.searchParams.set(SSO_ID_KEY, this.sessionId);
+         return url;
+     }

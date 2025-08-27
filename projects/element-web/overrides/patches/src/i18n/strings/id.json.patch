@@ -1,0 +1,34 @@
+--- 
++++ 
+@@ -1097,11 +1097,11 @@
+         "hs_blocked": "Homeserver ini telah diblokir oleh administratornya.",
+         "invalid_configuration_mixed_server": "Konfigurasi tidak valid: default_hs_url tidak dapat ditentukan bersama dengan default_server_name atau default_server_config",
+         "invalid_configuration_no_server": "Konfigurasi tidak absah: server bawaan belum ditentukan.",
+-        "invalid_json": "Konfigurasi Element Anda berisi JSON yang tidak absah. Mohon perbaiki masalahnya dan muat ulang laman ini.",
++        "invalid_json": "Konfigurasi MiM Anda berisi JSON yang tidak absah. Mohon perbaiki masalahnya dan muat ulang laman ini.",
+         "invalid_json_detail": "Pesan dari pengurai adalah: %(message)s",
+         "invalid_json_generic": "JSON tidak absah",
+         "mau": "Homeserver ini telah mencapai batasnya Pengguna Aktif Bulanan.",
+-        "misconfigured": "Anda salah mengatur Element",
++        "misconfigured": "Anda salah mengatur MiM",
+         "mixed_content": "Tidak dapat terhubung ke homeserver melalui HTTP ketika URL di browser berupa HTTPS. Gunakan HTTPS atau <a>aktifkan skrip yang tidak aman</a>.",
+         "non_urgent_echo_failure_toast": "Server Anda tidak menanggapi beberapa <a>permintaan</a>.",
+         "resource_limits": "Homeserver ini telah melebihi batas sumber dayanya.",
+@@ -1653,7 +1653,7 @@
+     },
+     "member_list_back_action_label": "Anggota ruangan",
+     "message_edit_dialog_title": "Editan pesan",
+-    "migrating_crypto": "Bersabarlah. Kami sedang memperbarui Element untuk membuat enkripsi lebih cepat dan andal.",
++    "migrating_crypto": "Bersabarlah. Kami sedang memperbarui MiM untuk membuat enkripsi lebih cepat dan andal.",
+     "mobile_guide": {
+         "toast_accept": "Gunakan aplikasi",
+         "toast_description": "%(brand)s bersifat eksperimental pada peramban web ponsel. Untuk pengalaman yang lebih baik dan fitur-fitur terkini, gunakan aplikasi natif gratis kami.",
+@@ -4021,7 +4021,7 @@
+         "you_are_presenting": "Anda sedang mempresentasi"
+     },
+     "web_default_device_name": "%(appName)s: %(browserName)s di %(osName)s",
+-    "welcome_to_element": "Selamat datang di Element",
++    "welcome_to_element": "Selamat datang di MiM",
+     "widget": {
+         "added_by": "Widget ditambahkan oleh",
+         "capabilities_dialog": {

@@ -1,0 +1,14 @@
+--- 
++++ 
+@@ -18,6 +18,11 @@
+     &.mx_ReactionsRowButton_selected {
+         background-color: $accent-300;
+         border-color: $accent-800;
++
++        .cpd-theme-dark & {
++            background-color: $accent-900;
++            border-color: $accent-1000;
++        }
+     }
+ 
+     &.mx_AccessibleButton_disabled {

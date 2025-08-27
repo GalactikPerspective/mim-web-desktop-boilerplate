@@ -1,0 +1,26 @@
+# FORMAT
+
+# project-name:
+#  tags_url: direct link to the github API tags of the project
+#  version: version to use, as defined by the tags
+#  local_dir: the local directory to use
+#  patches_dir: the directory with the patch files to be applied
+#  link_files: a list of src:relative_dest:?fallback files to attempt to symlink / copy
+
+
+element-web:
+  tags_url: https://api.github.com/repos/element-hq/element-web/tags
+  version: v1.11.109
+  local_dir: ./projects/element-web/local
+  patches_dir: ./projects/element-web/overrides/patches
+  link_files:
+    - ./projects/element-web/overrides/MiM:MiM
+    - ./projects/element-web/config.json:config.json:./projects/element-web/config.json.example
+    - ./projects/element-web/.env:.env:./projects/element-web/.env.example
+
+element-desktop:
+  tags_url: https://api.github.com/repos/element-hq/element-desktop/tags
+  version: v1.11.109
+  local_dir: ./projects/element-desktop/local
+  patches_dir: ./projects/element-desktop/overrides/patches
+  link_files: []

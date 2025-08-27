@@ -1,0 +1,18 @@
+--- 
++++ 
+@@ -32,6 +32,7 @@
+ import { useOwnDevices } from "../../devices/useOwnDevices";
+ import { DiscoverySettings } from "../../discovery/DiscoverySettings";
+ import SetIntegrationManager from "../../SetIntegrationManager";
++import LockScreenSettings from "../../../../../../MiM/src/lock-screen/LockScreenSettings";
+ 
+ interface IIgnoredUserProps {
+     userId: string;
+@@ -361,6 +362,7 @@
+                     {secureBackup}
+                     {eventIndex}
+                 </SettingsSection>
++                <LockScreenSettings />
+                 <SettingsSection heading={_t("common|privacy")}>
+                     <DiscoverySettings />
+                     {posthogSection}

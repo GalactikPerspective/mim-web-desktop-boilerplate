@@ -1,0 +1,25 @@
+--- 
++++ 
+@@ -1102,11 +1102,11 @@
+         "hs_blocked": "Tento domovský server byl zablokován jeho správcem.",
+         "invalid_configuration_mixed_server": "Neplatná konfigurace: default_hs_url nelze použít spolu s default_server_name nebo default_server_config",
+         "invalid_configuration_no_server": "Neplatná konfigurace: není zadán výchozí server.",
+-        "invalid_json": "Vaše konfigurace Elementu obsahuje nesprávná data JSON. Vyřešte prosím problém a načtěte znovu stránku.",
++        "invalid_json": "Vaše konfigurace MiMu obsahuje nesprávná data JSON. Vyřešte prosím problém a načtěte znovu stránku.",
+         "invalid_json_detail": "Zpráva z parseru je: %(message)s",
+         "invalid_json_generic": "Neplatný JSON",
+         "mau": "Tento domovský server dosáhl svého měsíčního limitu pro aktivní uživatele.",
+-        "misconfigured": "Váš Element je nesprávně nastaven",
++        "misconfigured": "Váš MiM je nesprávně nastaven",
+         "mixed_content": "Nelze se připojit k domovskému serveru přes HTTP, pokud je v adresním řádku HTTPS. Buď použijte HTTPS, nebo <a>povolte nezabezpečené skripty</a>.",
+         "non_urgent_echo_failure_toast": "Váš server neodpovídá na některé <a>požadavky</a>.",
+         "resource_limits": "Tento domovský server překročil některý z limitů.",
+@@ -4035,7 +4035,7 @@
+         "you_are_presenting": "Prezentujete"
+     },
+     "web_default_device_name": "%(appName)s: %(browserName)s na %(osName)s",
+-    "welcome_to_element": "Vítá vás Element",
++    "welcome_to_element": "Vítá vás MiM",
+     "widget": {
+         "added_by": "Widget přidal",
+         "capabilities_dialog": {

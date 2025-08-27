@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -114,7 +114,7 @@
+                 const blob = new Blob([f], {
+                     type: "text/plain;charset=us-ascii",
+                 });
+-                FileSaver.saveAs(blob, "element-keys.txt");
++                FileSaver.saveAs(blob, "mim-e2e-room-keys.txt");
+                 this.props.onFinished(true);
+             })
+             .catch((e) => {

@@ -1,0 +1,71 @@
+--- 
++++ 
+@@ -10,9 +10,7 @@
+  */
+ 
+ export enum MobileAppVariant {
+-    Classic = "element-classic",
+-    X = "element",
+-    Pro = "element-pro",
++    Classic = "mim-classic",
+ }
+ 
+ export interface MobileAppMetadata {
+@@ -28,33 +26,14 @@
+ 
+ export const mobileApps: Record<MobileAppVariant, MobileAppMetadata> = {
+     [MobileAppVariant.Classic]: {
+-        name: "Element",
+-        appleAppId: "id1083446067",
+-        appStoreUrl: "https://apps.apple.com/app/element-messenger/id1083446067",
+-        playStoreUrl: "https://play.google.com/store/apps/details?id=im.vector.app",
+-        fDroidUrl: "https://f-droid.org/packages/im.vector.app",
++        name: "MiM",
++        appleAppId: "id6471257269",
++        appStoreUrl: "https://apps.apple.com/pt/app/mim-secure-communication/id6471257269",
++        playStoreUrl: "https://play.google.com/store/apps/details?id=pt.galactikperspective.mim",
++        fDroidUrl: "",
+         deepLinkPath: "",
+         usesLegacyDeepLink: true,
+         isProApp: false,
+-    },
+-    [MobileAppVariant.X]: {
+-        name: "Element X",
+-        appleAppId: "id1631335820",
+-        appStoreUrl: "https://apps.apple.com/app/element-x-secure-chat-call/id1631335820",
+-        playStoreUrl: "https://play.google.com/store/apps/details?id=io.element.android.x",
+-        fDroidUrl: "https://f-droid.org/packages/io.element.android.x",
+-        deepLinkPath: "/element",
+-        usesLegacyDeepLink: false,
+-        isProApp: false,
+-    },
+-    [MobileAppVariant.Pro]: {
+-        name: "Element Pro",
+-        appleAppId: "id6502951615",
+-        appStoreUrl: "https://apps.apple.com/app/element-pro-for-work/id6502951615",
+-        playStoreUrl: "https://play.google.com/store/apps/details?id=io.element.enterprise",
+-        deepLinkPath: "/element-pro",
+-        usesLegacyDeepLink: false,
+-        isProApp: true,
+     },
+ };
+ 
+@@ -63,7 +42,8 @@
+     appleMeta.setAttribute("content", `app-id=${metadata.appleAppId}`);
+ 
+     if (server) {
+-        (document.getElementById("header_title") as HTMLHeadingElement).innerText = `Join ${server} on Element`;
++        (document.getElementById("header_title") as HTMLHeadingElement).innerText =
++            `Join ${server} on ${metadata.name}`;
+     }
+     (document.getElementById("app_store_link") as HTMLAnchorElement).href = metadata.appStoreUrl;
+     (document.getElementById("play_store_link") as HTMLAnchorElement).href = metadata.playStoreUrl;
+@@ -78,7 +58,7 @@
+     step1Heading.innerHTML = step1Heading!.innerHTML.replace("Element", metadata.name);
+ 
+     // Step 2 is only shown on the mobile guide, not on mobile.element.io
+-    if (document.getElementById("step2_container")) {
++    if (deepLinkUrl && document.getElementById("step2_container")) {
+         document.getElementById("step2_container")!.style.display = "block";
+         if (metadata.isProApp) {
+             document.getElementById("step2_description")!.innerHTML = "Use your work email to join";

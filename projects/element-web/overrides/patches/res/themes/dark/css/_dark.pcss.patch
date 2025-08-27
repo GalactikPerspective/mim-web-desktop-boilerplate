@@ -1,0 +1,89 @@
+--- 
++++ 
+@@ -15,6 +15,8 @@
+ $panel-actions: var(--cpd-color-alpha-gray-300);
+ 
+ $separator: var(--cpd-color-gray-400);
++
++$alert: var(--cpd-color-bg-critical-primary);
+ 
+ /* ******************** */
+ 
+@@ -35,20 +37,20 @@
+  * To use under very rare circumstances, always prefer the semantics defined
+  * in https://compound.element.io/?path=/docs /tokens-semantic-colors--docs
+  */
+-$accent-100: var(--cpd-color-green-100);
+-$accent-200: var(--cpd-color-green-200);
+-$accent-300: var(--cpd-color-green-300);
+-$accent-400: var(--cpd-color-green-400);
+-$accent-500: var(--cpd-color-green-500);
+-$accent-600: var(--cpd-color-green-600);
+-$accent-700: var(--cpd-color-green-700);
+-$accent-800: var(--cpd-color-green-800);
+-$accent-900: var(--cpd-color-green-900);
+-$accent-1000: var(--cpd-color-green-1000);
+-$accent-1100: var(--cpd-color-green-1100);
+-$accent-1200: var(--cpd-color-green-1200);
+-$accent-1300: var(--cpd-color-green-1300);
+-$accent-1400: var(--cpd-color-green-1400);
++$accent-100: var(--mim-primary-0);
++$accent-200: var(--mim-primary-1);
++$accent-300: var(--mim-primary-2);
++$accent-400: var(--mim-primary-3);
++$accent-500: var(--mim-primary-4);
++$accent-600: var(--mim-primary-5);
++$accent-700: var(--mim-primary-6);
++$accent-800: var(--mim-primary-7);
++$accent-900: var(--mim-primary-8);
++$accent-1000: var(--mim-primary-9);
++$accent-1100: var(--mim-primary-a);
++$accent-1200: var(--mim-primary-a);
++$accent-1300: var(--mim-primary-a);
++$accent-1400: var(--mim-primary-a);
+ 
+ /* Reused Figma non-compound colors */
+ /* ******************** */
+@@ -79,10 +81,10 @@
+ $event-selected-color: var(--cpd-color-bg-subtle-secondary);
+ $topleftmenu-color: $primary-content;
+ $roomtopic-color: $text-secondary-color;
+-$spacePanel-bg-color: rgba(38, 39, 43, 0.82);
++$spacePanel-bg-color: #212226;
+ $panel-gradient: rgba(34, 38, 46, 0), rgba(34, 38, 46, 1);
+ $h3-color: $primary-content;
+-$event-highlight-bg-color: #25271f;
++$event-highlight-bg-color: var(--mim-secondary-c);
+ $header-panel-text-primary-color: $text-secondary-color;
+ /* ******************** */
+ 
+@@ -200,8 +202,8 @@
+ 
+ /* Bubble tiles */
+ /* ******************** */
+-$eventbubble-self-bg: var(--cpd-color-green-300);
+-$eventbubble-others-bg: var(--cpd-color-gray-300);
++$eventbubble-self-bg: var(--mim-secondary-b);
++$eventbubble-others-bg: #25212d;
+ $eventbubble-bg-hover: var(--cpd-color-bg-subtle-secondary);
+ /* ******************** */
+ 
+@@ -315,3 +317,18 @@
+         radial-gradient(100% 100% at 0% 0%, hsla(250deg, 100%, 88%, 0.3) 0%, hsla(0deg, 100%, 86%, 0) 100%),
+         radial-gradient(106.35% 96.26% at 100% 0%, hsla(25deg, 100%, 88%, 0.4) 0%, hsla(167deg, 76%, 82%, 0) 100%) !important;
+ }
++
++[class*="_tooltip"] {
++    & span {
++        color: var(--mim-secondary-a);
++    }
++    & span[class*="_caption"] {
++        color: var(--mim-secondary-b);
++    }
++}
++
++[class*="_content"] {
++    & span[class*="_typography"] {
++        color: var(--mim-secondary-0);
++    }
++}

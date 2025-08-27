@@ -1,0 +1,25 @@
+--- 
++++ 
+@@ -1103,11 +1103,11 @@
+         "hs_blocked": "Цей домашній сервер заблокований адміністратором.",
+         "invalid_configuration_mixed_server": "Неправильна конфігурація: не можна вказати default_hs_url разом з default_server_name або default_server_config",
+         "invalid_configuration_no_server": "Невірна конфігурація: не вказано сервер за замовчуванням.",
+-        "invalid_json": "Ваша конфігурація Element містить хибний JSON. Виправте проблему та оновіть сторінку.",
++        "invalid_json": "Ваша конфігурація MiM містить хибний JSON. Виправте проблему та оновіть сторінку.",
+         "invalid_json_detail": "Повідомлення від аналізатора : %(message)s",
+         "invalid_json_generic": "Хибний JSON",
+         "mau": "Цей домашній сервер досягнув свого ліміту щомісячних активних користувачів.",
+-        "misconfigured": "Ваш Element налаштовано неправильно",
++        "misconfigured": "Ваш MiM налаштовано неправильно",
+         "mixed_content": "З'єднуватися з домашнім сервером через HTTP, коли в рядку адреси браузера введено HTTPS-адресу, не можна. Використовуйте HTTPS або <a>дозвольте небезпечні скрипти</a>.",
+         "non_urgent_echo_failure_toast": "Ваш сервер не відповідає на деякі <a>запити</a>.",
+         "resource_limits": "Цей домашній сервер досягнув одного зі своїх лімітів ресурсів.",
+@@ -4034,7 +4034,7 @@
+         "you_are_presenting": "Ви показуєте"
+     },
+     "web_default_device_name": "%(appName)s: %(browserName)s на %(osName)s",
+-    "welcome_to_element": "Ласкаво просимо до Element",
++    "welcome_to_element": "Ласкаво просимо до MiM",
+     "widget": {
+         "added_by": "Вджет додано",
+         "capabilities_dialog": {

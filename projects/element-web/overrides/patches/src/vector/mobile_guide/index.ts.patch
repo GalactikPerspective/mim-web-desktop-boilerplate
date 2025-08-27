@@ -1,0 +1,39 @@
+--- 
++++ 
+@@ -53,8 +53,8 @@
+     const defaultHsUrl = config?.["default_hs_url"];
+     const defaultIsUrl = config?.["default_is_url"];
+ 
+-    const appVariant = (config?.["mobile_guide_app_variant"] as MobileAppVariant) ?? MobileAppVariant.X;
+-    const metadata = mobileApps[appVariant] ?? mobileApps[MobileAppVariant.X]; // Additional fallback in case mobile_guide_app_variant has an unexpected value.
++    const appVariant = (config?.["mobile_guide_app_variant"] as MobileAppVariant) ?? MobileAppVariant.Classic;
++    const metadata = mobileApps[appVariant] ?? mobileApps[MobileAppVariant.Classic]; // Additional fallback in case mobile_guide_app_variant has an unexpected value.
+ 
+     const incompatibleOptions = [wkConfig, serverName, defaultHsUrl].filter((i) => !!i);
+     if (defaultHsUrl && (wkConfig || serverName)) {
+@@ -117,15 +117,18 @@
+     if (hsUrl && !hsUrl.endsWith("/")) hsUrl += "/";
+     if (isUrl && !isUrl.endsWith("/")) isUrl += "/";
+ 
+-    let deepLinkUrl = `https://mobile.element.io${metadata.deepLinkPath}`;
++    let deepLinkUrl = "";
++    if (metadata.deepLinkPath) {
++        deepLinkUrl = `https://mobile.element.io${metadata.deepLinkPath}`;
+ 
+-    if (metadata.usesLegacyDeepLink) {
+-        deepLinkUrl += `?hs_url=${encodeURIComponent(hsUrl)}`;
+-        if (isUrl) {
+-            deepLinkUrl += `&is_url=${encodeURIComponent(isUrl)}`;
++        if (metadata.usesLegacyDeepLink) {
++            deepLinkUrl += `?hs_url=${encodeURIComponent(hsUrl)}`;
++            if (isUrl) {
++                deepLinkUrl += `&is_url=${encodeURIComponent(isUrl)}`;
++            }
++        } else if (serverName) {
++            deepLinkUrl += `?account_provider=${serverName}`;
+         }
+-    } else if (serverName) {
+-        deepLinkUrl += `?account_provider=${serverName}`;
+     }
+ 
+     // Not part of updateMobilePage as the link is only shown on mobile_guide and not on mobile.element.io

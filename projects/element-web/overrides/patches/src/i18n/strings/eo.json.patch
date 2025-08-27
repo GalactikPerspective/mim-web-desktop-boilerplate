@@ -1,0 +1,25 @@
+--- 
++++ 
+@@ -718,11 +718,11 @@
+         "failed_copy": "Malsukcesis kopii",
+         "hs_blocked": "Tiu ĉi hejmservilo estas blokita de sia administranto.",
+         "invalid_configuration_no_server": "Nevalida agordo: neniu implicita servilo estas specifita.",
+-        "invalid_json": "Via agordaro de Elemento enhavas nevalidajn datumojn de JSON. Bonvolu korekti la problemon kaj aktualigi la paĝon.",
++        "invalid_json": "Via agordaro de MiMo enhavas nevalidajn datumojn de JSON. Bonvolu korekti la problemon kaj aktualigi la paĝon.",
+         "invalid_json_detail": "La mesaĝo el la analizilo estas: %(message)s",
+         "invalid_json_generic": "Nevalida JSON",
+         "mau": "Tiu ĉi hejmservilo atingis sian monatan limon de aktivaj uzantoj.",
+-        "misconfigured": "Via Elemento estas misagordita",
++        "misconfigured": "Via MiMo estas misagordita",
+         "mixed_content": "Hejmservilo ne alkonekteblas per HTTP kun HTTPS URL en via adresbreto. Aŭ uzu HTTPS aŭ <a>ŝaltu malsekurajn skriptojn</a>.",
+         "non_urgent_echo_failure_toast": "Via servilo ne respondas al iuj <a>petoj</a>.",
+         "resource_limits": "Tiu ĉi hejmservilo superis je unu el siaj rimedaj limoj.",
+@@ -2579,7 +2579,7 @@
+         "you_are_presenting": "Vi prezentas"
+     },
+     "web_default_device_name": "%(appName)s: %(browserName)s sur %(osName)s",
+-    "welcome_to_element": "Bonvenon al Element",
++    "welcome_to_element": "Bonvenon al MiM",
+     "widget": {
+         "added_by": "Fenestraĵon aldonis",
+         "capabilities_dialog": {

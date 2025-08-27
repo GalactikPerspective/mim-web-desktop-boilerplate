@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -243,8 +243,6 @@
+         if (backgroundImage) {
+             // convert to http before going much further
+             backgroundImage = mediaFromMxc(backgroundImage).srcHttp;
+-        } else {
+-            backgroundImage = OwnProfileStore.instance.getHttpAvatarUrl();
+         }
+         this.setState({ backgroundImage: backgroundImage ?? undefined });
+     };

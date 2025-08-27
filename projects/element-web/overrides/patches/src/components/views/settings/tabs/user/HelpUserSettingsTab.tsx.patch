@@ -1,0 +1,33 @@
+--- 
++++ 
+@@ -113,12 +113,12 @@
+                     <ul>
+                         <li>
+                             {_t(
+-                                "credits|default_cover_photo",
++                                "credits|element",
+                                 {},
+                                 {
+-                                    photo: (sub) => (
+-                                        <ExternalLink
+-                                            href="themes/element/img/backgrounds/lake.jpg"
++                                    repo: (sub) => (
++                                        <ExternalLink
++                                            href="https://github.com/element-hq/element-web"
+                                             rel="noreferrer noopener"
+                                             target="_blank"
+                                         >
+@@ -126,11 +126,8 @@
+                                         </ExternalLink>
+                                     ),
+                                     author: (sub) => (
+-                                        <ExternalLink href="https://www.flickr.com/golan">{sub}</ExternalLink>
+-                                    ),
+-                                    terms: (sub) => (
+-                                        <ExternalLink
+-                                            href="https://creativecommons.org/licenses/by-sa/4.0/"
++                                        <ExternalLink
++                                            href="https://element.io/"
+                                             rel="noreferrer noopener"
+                                             target="_blank"
+                                         >

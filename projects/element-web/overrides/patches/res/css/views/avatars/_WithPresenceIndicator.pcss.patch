@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -33,7 +33,7 @@
+     }
+ 
+     .mx_WithPresenceIndicator_icon_online::before {
+-        background-color: $accent;
++        background-color: $presence-online;
+     }
+ 
+     .mx_WithPresenceIndicator_icon_away::before {

@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -64,6 +64,8 @@
+         overflow: hidden;
+         text-overflow: ellipsis;
+         white-space: nowrap;
++        font-weight: bold;
++        font-size: 13px;
+     }
+ 
+     a& {

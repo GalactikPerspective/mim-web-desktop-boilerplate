@@ -1,0 +1,118 @@
+--- 
++++ 
+@@ -22,7 +22,7 @@
+ /* ******************** */
+ $primary-content: var(--cpd-color-text-primary);
+ $secondary-content: var(--cpd-color-text-secondary);
+-$tertiary-content: var(--cpd-color-gray-800);
++$tertiary-content: var(--mim-secondary-4);
+ $quaternary-content: var(--cpd-color-gray-600);
+ $quinary-content: var(--cpd-color-gray-400);
+ 
+@@ -32,7 +32,7 @@
+ $overlay-background: var(--cpd-color-alpha-gray-1300);
+ 
+ $panels: var(--cpd-color-bg-subtle-secondary);
+-$panel-actions: var(--cpd-color-alpha-gray-300);
++$panel-actions: var(--mim-secondary-1);
+ 
+ $separator: var(--cpd-color-gray-400);
+ 
+@@ -59,20 +59,20 @@
+  * To use under very rare circumstances, always prefer the semantics defined
+  * in https://compound.element.io/?path=/docs/tokens-semantic-colors--docs
+  */
+-$accent-100: var(--cpd-color-green-100);
+-$accent-200: var(--cpd-color-green-200);
+-$accent-300: var(--cpd-color-green-300);
+-$accent-400: var(--cpd-color-green-400);
+-$accent-500: var(--cpd-color-green-500);
+-$accent-600: var(--cpd-color-green-600);
+-$accent-700: var(--cpd-color-green-700);
+-$accent-800: var(--cpd-color-green-800);
+-$accent-900: var(--cpd-color-green-900);
+-$accent-1000: var(--cpd-color-green-1000);
+-$accent-1100: var(--cpd-color-green-1100);
+-$accent-1200: var(--cpd-color-green-1200);
+-$accent-1300: var(--cpd-color-green-1300);
+-$accent-1400: var(--cpd-color-green-1400);
++$accent-100: var(--mim-secondary-1);
++$accent-200: var(--mim-secondary-2);
++$accent-300: var(--mim-secondary-3);
++$accent-400: var(--mim-secondary-4);
++$accent-500: var(--mim-secondary-5);
++$accent-600: var(--mim-secondary-6);
++$accent-700: var(--mim-secondary-7);
++$accent-800: var(--mim-secondary-8);
++$accent-900: var(--mim-secondary-9);
++$accent-1000: var(--mim-secondary-a);
++$accent-1100: var(--mim-secondary-b);
++$accent-1200: var(--mim-secondary-b);
++$accent-1300: var(--mim-secondary-b);
++$accent-1400: var(--mim-secondary-b);
+ 
+ /* Reused Figma non-compound colors */
+ /* ******************** */
+@@ -104,7 +104,7 @@
+ /* ******************** */
+ $dark-panel-bg-color: var(--cpd-color-bg-subtle-secondary);
+ $muted-fg-color: #61708b;
+-$light-fg-color: #747474;
++$light-fg-color: var(--mim-secondary-4);
+ $focus-bg-color: $preview-widget-bar-color;
+ $info-plinth-bg-color: #f7f7f7;
+ $event-selected-color: var(--cpd-color-bg-subtle-secondary);
+@@ -113,7 +113,7 @@
+ $spacePanel-bg-color: rgba(232, 232, 232, 0.77);
+ $panel-gradient: rgba(242, 245, 248, 0), rgba(242, 245, 248, 1);
+ $h3-color: #3d3b39;
+-$event-highlight-bg-color: $yellow-background;
++$event-highlight-bg-color: var(--mim-secondary-2);
+ $header-panel-text-primary-color: #91a1c0;
+ /* ******************** */
+ 
+@@ -170,11 +170,12 @@
+ 
+ /* Presence */
+ /* ******************** */
++$presence-online: #35b087;
+ $presence-away: #d9b072;
+ /* not using a compound color here for now as we want to have the same color in
+    light and dark theme. Until we have a non-symetrical token for it, let's keep
+    it hardcoded to the following value */
+-$presence-offline: #e3e8f0;
++$presence-offline: #575756;
+ $presence-busy: $alert;
+ /* ******************** */
+ 
+@@ -215,7 +216,7 @@
+ /* ******************** */
+ $e2e-verified-color: var(--cpd-color-icon-success-primary);
+ $e2e-warning-color: var(--cpd-color-icon-critical-primary);
+-$e2e-verified-color-light: var(--cpd-color-green-300);
++$e2e-verified-color-light: var(--mim-primary-1);
+ $e2e-warning-color-light: var(--cpd-color-red-300);
+ /* ******************** */
+ 
+@@ -277,9 +278,9 @@
+ 
+ /* Bubble tiles */
+ /* ******************** */
+-$eventbubble-self-bg: var(--cpd-color-green-300);
+-$eventbubble-others-bg: var(--cpd-color-gray-300);
+-$eventbubble-bg-hover: var(--cpd-color-bg-subtle-secondary);
++$eventbubble-self-bg: var(--mim-primary-1);
++$eventbubble-others-bg: #edebf2;
++$eventbubble-bg-hover: #f6f5f7;
+ /* ******************** */
+ 
+ /* Lightbox */
+@@ -289,7 +290,7 @@
+    it hardcoded to the following value */
+ $lightbox-fg-color: #fff;
+ $lightbox-background-bg-color: #000;
+-$lightbox-background-bg-opacity: 0.95;
++$lightbox-background-bg-opacity: 0.85;
+ /* ******************** */
+ 
+ /* VoIP */

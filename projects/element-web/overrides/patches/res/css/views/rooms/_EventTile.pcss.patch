@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -609,7 +609,7 @@
+         }
+ 
+         &.mx_EventTile_continuation {
+-            margin-top: 2px;
++            margin-top: 4px;
+         }
+         &.mx_EventTile_lastInSection {
+             /* Other half of the gutter is provided by margin-top on the first

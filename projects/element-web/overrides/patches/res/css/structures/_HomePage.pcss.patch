@@ -1,0 +1,14 @@
+--- 
++++ 
+@@ -94,6 +94,11 @@
+             &.mx_HomePage_button_createGroup::before {
+                 mask-image: url("$(res)/img/element-icons/group-members.svg");
+             }
++
++            &:hover {
++                transition-duration: 300ms;
++                transform: scale(1.05);
++            }
+         }
+     }
+ }
