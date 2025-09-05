@@ -1,0 +1,25 @@
+--- 
++++ 
+@@ -811,11 +811,11 @@
+         "failed_copy": "Fallo ao copiar",
+         "hs_blocked": "O servidor de inicio foi bloqueado pola súa administración.",
+         "invalid_configuration_no_server": "Configuración non válida: non se indicou servidor por defecto.",
+-        "invalid_json": "A configuración de Element contén JSON non válido. Corrixe o problema e recarga a páxina.",
++        "invalid_json": "A configuración de MiM contén JSON non válido. Corrixe o problema e recarga a páxina.",
+         "invalid_json_detail": "A mensaxe desde o intérprete é: %(message)s",
+         "invalid_json_generic": "JSON non válido",
+         "mau": "Este servidor acadou o límite mensual de usuarias activas.",
+-        "misconfigured": "Element non está ben configurado",
++        "misconfigured": "MiM non está ben configurado",
+         "mixed_content": "Non se pode conectar ao servidor vía HTTP cando na barra de enderezos do navegador está HTTPS. Utiliza HTTPS ou <a>active scripts non seguros</a>.",
+         "non_urgent_echo_failure_toast": "O teu servidor non responde a algunhas <a>solicitudes</a>.",
+         "resource_limits": "Este servidor excedeu un dos seus límites de recursos.",
+@@ -3013,7 +3013,7 @@
+         "you_are_presenting": "Estaste a presentar"
+     },
+     "web_default_device_name": "%(appName)s: %(browserName)s en %(osName)s",
+-    "welcome_to_element": "Benvida/o a Element",
++    "welcome_to_element": "Benvida/o a MiM",
+     "widget": {
+         "added_by": "Widget engadido por",
+         "capabilities_dialog": {

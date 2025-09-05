@@ -1,0 +1,34 @@
+--- 
++++ 
+@@ -1100,11 +1100,11 @@
+         "hs_blocked": "Este servidor local foi bloqueado pelo seu administrador.",
+         "invalid_configuration_mixed_server": "Configuração inválida: um default_hs_url não pode ser especificado junto com default_server_name ou default_server_config",
+         "invalid_configuration_no_server": "Configuração inválida: nenhum servidor default especificado.",
+-        "invalid_json": "Sua configuração do Element contém JSON inválido. Por favor corrija o problema e recarregue a página.",
++        "invalid_json": "Sua configuração do MiM contém JSON inválido. Por favor corrija o problema e recarregue a página.",
+         "invalid_json_detail": "A mensagem do parser é: %(message)s",
+         "invalid_json_generic": "JSON inválido",
+         "mau": "Este homeserver atingiu seu limite de usuário ativo mensal.",
+-        "misconfigured": "Seu Element está mal configurado",
++        "misconfigured": "Seu MiM está mal configurado",
+         "mixed_content": "Uma conexão com o servidor local via HTTP não pode ser estabelecida se a barra de endereços do navegador contiver um endereço HTTPS. Use HTTPS ou, em vez disso, permita ao navegador executar <a>scripts não seguros</a>.",
+         "non_urgent_echo_failure_toast": "Seu servidor não está respondendo a algumas <a>solicitações</a>.",
+         "resource_limits": "Este servidor local ultrapassou um dos seus limites de recursos.",
+@@ -3960,7 +3960,7 @@
+         "disabled_no_perms_start_video_call": "Você não tem permissão para iniciar chamadas de vídeo",
+         "disabled_no_perms_start_voice_call": "Você não tem permissão para iniciar chamadas de voz",
+         "disabled_ongoing_call": "Chamada em andamento",
+-        "element_call": "Element",
++        "element_call": "Element Call",
+         "enable_camera": "Ligar câmera",
+         "enable_microphone": "Habilitar microfone",
+         "expand": "Retornar para a chamada",
+@@ -4029,7 +4029,7 @@
+         "you_are_presenting": "Você está apresentando"
+     },
+     "web_default_device_name": "%(appName)s: %(browserName)s em %(osName)s",
+-    "welcome_to_element": "Boas-vindas a Element",
++    "welcome_to_element": "Boas-vindas ao MiM",
+     "widget": {
+         "added_by": "Widget adicionado por",
+         "capabilities_dialog": {

@@ -1,0 +1,11 @@
+requests == 2.32.4
+PyYaml == 6.0.2
+click == 8.2.1
+
+# Linting tools
+ruff == 0.12.7
+mypy == 1.17.1
+
+# Types
+types-PyYAML == 6.0.12.20250516
+types-requests == 2.32.4.20250611

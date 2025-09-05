@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -143,6 +143,7 @@
+ $roomtile-default-badge-bg-color: #61708b;
+ $roomtile-selected-bg-color: #fff;
+ 
++$presence-online: #35b087;
+ $presence-away: #d9b072;
+ $presence-offline: #e3e8f0;
+ $presence-busy: #ff5b55;

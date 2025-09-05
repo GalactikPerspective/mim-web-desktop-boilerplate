@@ -1,0 +1,25 @@
+--- 
++++ 
+@@ -1081,11 +1081,11 @@
+         "hs_blocked": "Dieser Heim-Server wurde von seiner Administration geblockt.",
+         "invalid_configuration_mixed_server": "Ungültige Konfiguration: default_hs_url kann nicht zeitgleich mit default_server_name oder default_server_config festgelegt werden",
+         "invalid_configuration_no_server": "Ungültige Konfiguration: Es wurde kein Standardserver angegeben.",
+-        "invalid_json": "Deine Element-Konfiguration enthält ungültiges JSON. Bitte korrigiere das Problem und lade die Seite neu.",
++        "invalid_json": "Deine MiM-Konfiguration enthält ungültiges JSON. Bitte korrigiere das Problem und lade die Seite neu.",
+         "invalid_json_detail": "Die Nachricht des Parsers ist: %(message)s",
+         "invalid_json_generic": "Ungültiges JSON",
+         "mau": "Dieser Heim-Server hat seinen Grenzwert an monatlich aktiven Nutzern erreicht.",
+-        "misconfigured": "Dein Element ist falsch konfiguriert",
++        "misconfigured": "Dein MiM ist falsch konfiguriert",
+         "mixed_content": "Es kann keine Verbindung zum Heim-Server via HTTP aufgebaut werden, wenn die Adresszeile des Browsers eine HTTPS-URL enthält. Entweder HTTPS verwenden oder alternativ <a>unsichere Skripte erlauben</a>.",
+         "non_urgent_echo_failure_toast": "Dein Server antwortet auf einige <a>Anfragen</a> nicht.",
+         "resource_limits": "Dieser Heim-Server hat einen seiner Ressourcengrenzwerte überschritten.",
+@@ -3993,7 +3993,7 @@
+         "you_are_presenting": "Du präsentierst"
+     },
+     "web_default_device_name": "%(appName)s: %(browserName)s auf %(osName)s",
+-    "welcome_to_element": "Willkommen bei Element",
++    "welcome_to_element": "Willkommen bei MiM",
+     "widget": {
+         "added_by": "Widget hinzugefügt von",
+         "capabilities_dialog": {

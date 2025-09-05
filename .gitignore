@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+__pycache__
+
+# Local project files
+# element-web
+projects/element-web/config.json
+projects/element-web/.env
+projects/element-web/local
+
+projects/element-desktop/local

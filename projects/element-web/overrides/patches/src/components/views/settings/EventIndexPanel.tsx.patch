@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -197,7 +197,7 @@
+                         {
+                             desktopLink: (sub) => (
+                                 <ExternalLink
+-                                    href="https://element.io/get-started"
++                                    href="https://galactikperspective.pt"
+                                     target="_blank"
+                                     rel="noreferrer noopener"
+                                 >

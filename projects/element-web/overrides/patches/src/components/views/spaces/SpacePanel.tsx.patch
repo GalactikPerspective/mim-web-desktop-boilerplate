@@ -1,0 +1,19 @@
+--- 
++++ 
+@@ -68,6 +68,7 @@
+ import AccessibleButton from "../elements/AccessibleButton";
+ import { Landmark, LandmarkNavigation } from "../../../accessibility/LandmarkNavigation";
+ import { KeyboardShortcut } from "../settings/KeyboardShortcut";
++import Toolbar from "../../../../MiM/src/Toolbar";
+ 
+ const useSpaces = (): [Room[], MetaSpace[], Room[], SpaceKey] => {
+     const invites = useEventEmitterState<Room[]>(SpaceStore.instance, UPDATE_INVITED_SPACES, () => {
+@@ -430,6 +431,8 @@
+                             )}
+                         </Droppable>
+ 
++                        <Toolbar isPanelCollapsed={isPanelCollapsed} />
++
+                         <ThreadsActivityCentre displayButtonLabel={!isPanelCollapsed} />
+ 
+                         <QuickSettingsButton isPanelCollapsed={isPanelCollapsed} />

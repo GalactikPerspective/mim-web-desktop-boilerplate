@@ -1,0 +1,107 @@
+/* Base MiM Colors */
+
+:root {
+    --mim-primary-0: #fdeff7;
+    --mim-primary-1: #f9d8e9;
+    --mim-primary-2: #f5b5d2;
+    --mim-primary-3: #ed91bc;
+    --mim-primary-4: #e34d95;
+    --mim-primary-5: #e52a88;
+    --mim-primary-6: #e60078;
+    --mim-primary-7: #cb046d;
+    --mim-primary-8: #8c1962;
+    --mim-primary-9: #7d144c;
+    --mim-primary-a: #491435;
+
+    --mim-secondary-0: #f6f4f9;
+    --mim-secondary-1: #ede9f4;
+    --mim-secondary-2: #d9cde6;
+    --mim-secondary-3: #c3b3d6;
+    --mim-secondary-4: #957eb6;
+    --mim-secondary-5: #674a9b;
+    --mim-secondary-6: #502f86;
+    --mim-secondary-7: #4a2c7b;
+    --mim-secondary-8: #3e276f;
+    --mim-secondary-9: #4f1e52;
+    --mim-secondary-a: #3c245e;
+    --mim-secondary-b: #311f4a;
+    --mim-secondary-c: #1e0f35;
+}
+
+/* Override the compounds, as per the docs: https://compound.element.io/?path=/docs/develop-theming--docs*/
+@layer compound.custom {
+    :root {
+        & [class*="cpd-theme-"] {
+            --cpd-color-bg-decorative-1: var(--mim-primary-0);
+            --cpd-color-text-decorative-1: var(--mim-primary-7);
+            --cpd-color-bg-decorative-2: var(--mim-secondary-1);
+            --cpd-color-text-decorative-2: var(--mim-secondary-8);
+            --cpd-color-bg-decorative-3: var(--mim-primary-2);
+            --cpd-color-text-decorative-3: var(--mim-primary-8);
+            --cpd-color-bg-decorative-4: var(--mim-secondary-3);
+            --cpd-color-text-decorative-4: var(--mim-secondary-a);
+            --cpd-color-bg-decorative-5: var(--mim-primary-1);
+            --cpd-color-text-decorative-5: var(--mim-primary-a);
+            --cpd-color-bg-decorative-6: var(--mim-secondary-4);
+            --cpd-color-text-decorative-6: var(--mim-secondary-b);
+
+            --cpd-color-text-primary: var(--mim-secondary-b);
+            --cpd-color-text-secondary: var(--mim-secondary-a);
+            --cpd-color-text-success-primary: var(--mim-primary-6);
+            --cpd-color-text-info-primary: var(--mim-secondary-6);
+            --cpd-color-text-action-accent: var(--mim-primary-5);
+            --cpd-color-text-critical-primary: #1f2328;
+
+            --cpd-color-bg-accent-rest: var(--mim-primary-6);
+            --cpd-color-bg-accent-hovered: var(--mim-primary-9);
+            --cpd-color-bg-action-primary-rest: var(--mim-primary-6);
+            --cpd-color-bg-action-primary-hovered: var(--mim-primary-a);
+            --cpd-color-bg-success-subtle: var(--mim-secondary-2);
+            --cpd-color-bg-subtle-secondary: var(--mim-secondary-0);
+
+            --cpd-color-icon-disabled: var(--mim-secondary-3);
+            --cpd-color-icon-primary: var(--mim-primary-6);
+            --cpd-color-icon-accent-primary: var(--mim-primary-6);
+            --cpd-color-icon-tertiary: var(--mim-secondary-a);
+            --cpd-color-icon-success-primary: var(--mim-primary-6);
+            --cpd-color-icon-accent-tertiary: var(--mim-primary-6);
+        }
+
+        & .cpd-theme-dark {
+            --cpd-color-bg-decorative-1: var(--mim-primary-7);
+            --cpd-color-text-decorative-1: var(--mim-primary-0);
+            --cpd-color-bg-decorative-2: var(--mim-secondary-7);
+            --cpd-color-text-decorative-2: var(--mim-secondary-1);
+            --cpd-color-bg-decorative-3: var(--mim-primary-8);
+            --cpd-color-text-decorative-3: var(--mim-primary-2);
+            --cpd-color-bg-decorative-4: var(--mim-secondary-a);
+            --cpd-color-text-decorative-4: var(--mim-secondary-3);
+            --cpd-color-bg-decorative-5: var(--mim-primary-a);
+            --cpd-color-text-decorative-5: var(--mim-primary-1);
+            --cpd-color-bg-decorative-6: var(--mim-secondary-b);
+            --cpd-color-text-decorative-6: var(--mim-secondary-4);
+
+            --cpd-color-text-primary: var(--mim-secondary-1);
+            --cpd-color-text-secondary: var(--mim-secondary-1);
+            --cpd-color-text-critical-primary: var(--mim-primary-0);
+            --cpd-color-text-on-solid-primary: var(--mim-primary-0);
+
+            --cpd-color-bg-critical-primary: #932c2c;
+            --cpd-color-bg-success-subtle: var(--mim-secondary-b);
+            --cpd-color-bg-subtle-secondary: #1d1f24;
+
+            --cpd-color-bg-accent-rest: var(--mim-primary-6);
+            --cpd-color-bg-accent-hovered: var(--mim-primary-9);
+            --cpd-color-bg-action-primary-rest: var(--mim-secondary-8);
+            --cpd-color-bg-action-primary-hovered: var(--mim-secondary-a);
+            --cpd-color-bg-canvas-default: #16191e;
+            --cpd-color-bg-action-secondary-rest: #16191e;
+
+            --cpd-color-icon-disabled: #332e3d;
+            --cpd-color-icon-primary: var(--mim-secondary-4);
+            --cpd-color-icon-tertiary: var(--mim-secondary-1);
+            --cpd-color-icon-accent-tertiary: var(--mim-secondary-4);
+            --cpd-color-icon-on-solid-primary: var(--mim-primary-0);
+        }
+    }
+}

@@ -1,0 +1,66 @@
+--- 
++++ 
+@@ -16,12 +16,12 @@
+  *  Passes $ED_DEBIAN_CHANGELOG to build.deb.fpm if specified
+  */
+ 
+-const DEFAULT_APP_ID = "im.riot.app";
+-const NIGHTLY_APP_ID = "im.riot.nightly";
+-const NIGHTLY_DEB_NAME = "element-nightly";
+-
+-const DEFAULT_PROTOCOL_SCHEME = "io.element.desktop";
+-const NIGHTLY_PROTOCOL_SCHEME = "io.element.nightly";
++const DEFAULT_APP_ID = "mim.galactikperspective.app";
++const NIGHTLY_APP_ID = "mim.galactikperspective.nightly";
++const NIGHTLY_DEB_NAME = "mim-nightly";
++
++const DEFAULT_PROTOCOL_SCHEME = "pt.mim.desktop";
++const NIGHTLY_PROTOCOL_SCHEME = "pt.mim.nightly";
+ 
+ interface Pkg {
+     name: string;
+@@ -99,7 +99,7 @@
+     linux: {
+         target: ["tar.gz", "deb"],
+         category: "Network;InstantMessaging;Chat",
+-        maintainer: "support@element.io",
++        maintainer: "ops@galactikperspective.pt",
+         icon: "build/icons",
+         executableName: pkg.name, // element-desktop or element-desktop-nightly
+     },
+@@ -119,14 +119,7 @@
+             "libgbm1",
+         ],
+         recommends: ["libsqlcipher0", "element-io-archive-keyring"],
+-        fpm: [
+-            "--deb-field",
+-            "Replaces: riot-desktop (<< 1.7.0), riot-web (<< 1.7.0)",
+-            "--deb-field",
+-            "Breaks: riot-desktop (<< 1.7.0), riot-web (<< 1.7.0)",
+-            "--deb-pre-depends",
+-            "libc6 (>= 2.31)",
+-        ],
++        fpm: [],
+     },
+     mac: {
+         category: "public.app-category.social-networking",
+@@ -141,7 +134,7 @@
+         x64ArchFiles: "**/matrix-seshat/*.node", // hak already runs lipo
+     },
+     win: {
+-        target: ["squirrel", "msi"],
++        target: ["msi"],
+         signtoolOptions: {
+             signingHashAlgorithms: ["sha256"],
+         },
+@@ -154,8 +147,8 @@
+         output: "dist",
+     },
+     protocols: {
+-        name: "element",
+-        schemes: [DEFAULT_PROTOCOL_SCHEME, "element"],
++        name: "mim",
++        schemes: [DEFAULT_PROTOCOL_SCHEME, "mim"],
+     },
+     nativeRebuilder: "sequential",
+     nodeGypRebuild: false,

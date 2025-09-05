@@ -1,0 +1,25 @@
+--- 
++++ 
+@@ -1103,11 +1103,11 @@
+         "hs_blocked": "Доступ к этому домашнему серверу заблокирован вашим администратором.",
+         "invalid_configuration_mixed_server": "Неверная конфигурация: нельзя указать default_hs_url вместе с default_server_name или default_server_config",
+         "invalid_configuration_no_server": "Неверная конфигурация: сервер по умолчанию не указан.",
+-        "invalid_json": "Конфигурация Element содержит неверный JSON. Исправьте проблему и обновите страницу.",
++        "invalid_json": "Конфигурация MiM содержит неверный JSON. Исправьте проблему и обновите страницу.",
+         "invalid_json_detail": "Сообщение из парсера: %(message)s",
+         "invalid_json_generic": "Неверный JSON",
+         "mau": "Сервер достиг ежемесячного ограничения активных пользователей.",
+-        "misconfigured": "Ваш Element неверно настроен",
++        "misconfigured": "Ваш MiM неверно настроен",
+         "mixed_content": "Не удается подключиться к домашнему серверу через HTTP, так как в адресной строке браузера указан адрес HTTPS. Используйте HTTPS или <a>включите небезопасные скрипты</a>.",
+         "non_urgent_echo_failure_toast": "Ваш сервер не отвечает на некоторые <a>запросы</a>.",
+         "resource_limits": "Превышен один из лимитов на ресурсы сервера.",
+@@ -4027,7 +4027,7 @@
+         "you_are_presenting": "Вы представляете"
+     },
+     "web_default_device_name": "%(appName)s: %(browserName)s на %(osName)s",
+-    "welcome_to_element": "Добро пожаловать в Element",
++    "welcome_to_element": "Добро пожаловать в MiM",
+     "widget": {
+         "added_by": "Виджет добавлен",
+         "capabilities_dialog": {

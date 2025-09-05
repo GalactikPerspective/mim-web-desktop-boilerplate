@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -88,7 +88,6 @@
+ 
+     &.mx_FacePile_toggled {
+         background: var(--cpd-color-bg-success-subtle);
+-        color: var(--cpd-color-text-action-accent);
+         font: var(--cpd-font-body-sm-semibold);
+     }
+ }
