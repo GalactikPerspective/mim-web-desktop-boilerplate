@@ -1,0 +1,103 @@
+--- 
++++ 
+@@ -728,6 +728,7 @@
+         "subspace_join_rule_restricted_description": "Qualquer pessoa em <SpaceName/> poderá encontrar e aderir."
+     },
+     "credits": {
++        "element": "MiM web é um fork de <repo>Element web</repo>, pela <author>equipa Element</author>.",
+         "default_cover_photo": "A fotografia de capa predefinida <photo></photo> é © <author>Jesús Roncero</author> utilizada nos termos de <terms>CC-BY-SA 4.0</terms>.",
+         "twemoji": "A arte do emoji <twemoji>Twemoji</twemoji> é © <author>Twitter, Inc e outros colaboradores</author> utilizada ao abrigo dos termos de <terms>CC-BY 4.0</terms>.",
+         "twemoji_colr": "O tipo de letra <colr>twemoji-colr</colr> é © <author>Mozilla Foundation</author> utilizado nos termos de <terms>Apache 2.0</terms>."
+@@ -1051,11 +1052,11 @@
+         "hs_blocked": "Este servidor doméstico foi bloqueado pelo seu administrador.",
+         "invalid_configuration_mixed_server": "Configuração inválida: não pode ser especificado um default_hs_url juntamente com default_server_name ou default_server_config",
+         "invalid_configuration_no_server": "Configuração inválida: não especificaste o servidor predefinido.",
+-        "invalid_json": "A tua configuração do Element contém um JSON inválido. Corrige o problema e volta a carregar a página.",
++        "invalid_json": "A tua configuração do MiM contém um JSON inválido. Corrige o problema e volta a carregar a página.",
+         "invalid_json_detail": "A mensagem do analisador é: %(message)s",
+         "invalid_json_generic": "JSON inválido",
+         "mau": "Este servidor doméstico atingiu o seu limite mensal de utilizadores activos.",
+-        "misconfigured": "O teu Element está mal configurado",
++        "misconfigured": "O teu MiM está mal configurado",
+         "mixed_content": "Não consigo conectar ao servidor padrão através de HTTP quando uma URL HTTPS está na barra de endereços do seu navegador. Use HTTPS ou então <a>habilite scripts não seguros no seu navegador</a>.",
+         "non_urgent_echo_failure_toast": "O teu servidor não está a responder a alguns pedidos <a></a> .",
+         "resource_limits": "Este servidor doméstico excedeu um dos seus limites de recursos.",
+@@ -1608,7 +1609,7 @@
+     },
+     "member_list_back_action_label": "Membros da sala",
+     "message_edit_dialog_title": "Edições de mensagens",
+-    "migrating_crypto": "Aguenta firme. Estamos a atualizar o Element para tornar a encriptação mais rápida e mais fiável.",
++    "migrating_crypto": "Aguenta firme. Estamos a atualizar o MiM para tornar a encriptação mais rápida e mais fiável.",
+     "mobile_guide": {
+         "toast_accept": "Utiliza a aplicação",
+         "toast_description": "%(brand)s é experimental num navegador da Web móvel. Para obteres uma melhor experiência e as funcionalidades mais recentes, utiliza a nossa aplicação nativa gratuita.",
+@@ -2415,8 +2416,8 @@
+             "brand_version": "versão do %(brand)s:",
+             "clear_cache_reload": "Limpa a cache e volta a carregar",
+             "crypto_version": "Versão criptográfica:",
+-            "dialog_title": "<strong>Definições:</strong> Ajuda e Acerca",
+-            "help_link": "Para obter ajuda sobre como utilizar %(brand)s, clica em <a>aqui</a>.",
++            "dialog_title": "<strong>Definições:</strong> Ajuda e sobre",
++            "help_link": "Para obter ajuda sobre como utilizar %(brand)s, clica <a>aqui</a>.",
+             "homeserver": "O servidor doméstico é <code>%(homeserverUrl)s</code>",
+             "identity_server": "O servidor de identidade é <code>%(identityServerUrl)s</code>",
+             "title": "Ajuda e sobre",
+@@ -2512,7 +2513,7 @@
+                 "change_recovery_confirm_description": "Introduz a tua nova chave de recuperação abaixo para terminar. A tua chave antiga deixará de funcionar.",
+                 "change_recovery_confirm_title": "Introduz a tua nova chave de recuperação",
+                 "change_recovery_key": "Altera a chave de recuperação",
+-                "change_recovery_key_description": "Anota esta nova chave de recuperação num local seguro. Em seguida, clica em Continuar para confirmar a alteração.",
++                "change_recovery_key_description": "Anota esta nova chave de recuperação num local seguro. Em seguida, clica em continuar para confirmar a alteração.",
+                 "change_recovery_key_title": "Alterar a chave de recuperação?",
+                 "description": "Recupera a tua identidade criptográfica e o histórico de mensagens com uma chave de recuperação, caso tenhas perdido todos os teus dispositivos existentes.",
+                 "enter_key_error": "A chave de recuperação inserida não está correta.",
+@@ -2793,7 +2794,29 @@
+             "message_search_unsupported_web": "%(brand)s não é possível armazenar mensagens encriptadas em cache com segurança localmente durante a execução num navegador da Web. Usa <desktopLink>%(brand)s Desktop</desktopLink> para que as mensagens encriptadas apareçam nos resultados da pesquisa.",
+             "record_session_details": "Grava o nome do cliente, a versão e o URL para reconhecer mais facilmente as sessões no gestor de sessões",
+             "send_analytics": "Envia dados analíticos",
+-            "strict_encryption": "Enviar mensagens apenas a utilizadores verificados"
++            "strict_encryption": "Enviar mensagens apenas a utilizadores verificados",
++            "lock_screen": {
++                "heading": "Trancar ecrã",
++                "sub_heading": "Configurar pin",
++                "description": "Defina um pin a ser necessário 2 minutos depois de inatividade.",
++                "configure_button": "Definir pin",
++                "code_set": "Existe um pin definido.",
++                "remove_button": "Remover pin",
++                "remaining_attempts_warning": "%(remainingAttempts)s tentativa(s) restante(s).",
++                "setup_pin_dialog": {
++                    "title": "Configurar Pin",
++                    "initial": "Defina um pin para proteger o seu dispositivo.",
++                    "initial_warning": "NOTA: Assegure-se que tem a assinatura cruzada e cópia de segurança configuradas. Se falhar o pin, irá perder acesso a esta sessão.",
++                    "confirm": "Confirme o pin.",
++                    "incorrect": "Pin incorreto. Por favor, começe novamente.",
++                    "success": "Pin configurado corretamente."
++                },
++                "remove_pin_dialog": {
++                    "title": "Remover Pin",
++                    "body": "Por favor confirme o seu Pin para o remover.",
++                    "success": "Pin removido com sucesso."
++                }
++            }
+         },
+         "send_read_receipts": "Enviar recibos lidos",
+         "send_read_receipts_unsupported": "O teu servidor não suporta a desativação do envio de recibos de leitura.",
+@@ -3698,6 +3721,9 @@
+             }
+         }
+     },
++    "toolbar": {
++        "title": "Ferramentas"
++    },
+     "truncated_list_n_more": {
+         "one": "",
+         "other": "E %(count)s mais..."
+@@ -3925,7 +3951,7 @@
+         "you_are_presenting": "Estás a apresentar"
+     },
+     "web_default_device_name": "%(appName)s: %(browserName)s em %(osName)s",
+-    "welcome_to_element": "Bem-vindo ao Element",
++    "welcome_to_element": "Bem-vindo ao MiM",
+     "widget": {
+         "added_by": "Widget adicionado por",
+         "capabilities_dialog": {

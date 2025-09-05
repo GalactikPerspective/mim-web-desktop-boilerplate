@@ -1,0 +1,17 @@
+--- 
++++ 
+@@ -49,12 +49,12 @@
+         &:hover,
+         &:hover .mx_ThreadsActivityCentreButton_Icon {
+             background-color: $quaternary-content;
+-            fill: $primary-content;
++            fill: var(--cpd-color-icon-primary);
+         }
+     }
+ 
+     & .mx_ThreadsActivityCentreButton_Icon {
+-        fill: $secondary-content;
++        fill: var(--cpd-color-icon-tertiary);
+     }
+ }
+ 

@@ -1,0 +1,23 @@
+--- 
++++ 
+@@ -362,6 +362,7 @@
+     "mediaPreviewConfig": IBaseSetting<MediaPreviewConfig>;
+     "inviteRules": IBaseSetting<ComputedInviteConfig>;
+     "Developer.elementCallUrl": IBaseSetting<string>;
++    "LockScreen.hiddenCode": IBaseSetting<string>;
+ }
+ 
+ export type SettingKey = keyof Settings;
+@@ -1426,6 +1427,12 @@
+         default: true,
+     },
+ 
++    // LockScreen
++    "LockScreen.hiddenCode": {
++        supportedLevels: LEVELS_DEVICE_ONLY_SETTINGS,
++        default: "",
++    },
++
+     // Electron-specific settings, they are stored by Electron and set/read over an IPC.
+     // We store them over there are they are necessary to know before the renderer process launches.
+     "Electron.autoLaunch": {

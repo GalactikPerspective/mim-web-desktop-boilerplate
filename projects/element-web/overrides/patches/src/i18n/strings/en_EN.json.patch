@@ -1,0 +1,74 @@
+--- 
++++ 
+@@ -743,6 +743,7 @@
+         "subspace_join_rule_restricted_description": "Anyone in <SpaceName/> will be able to find and join."
+     },
+     "credits": {
++        "element": "MiM web is a fork of <repo>Element web</repo>, by the <author>Element team</author>.",
+         "default_cover_photo": "The <photo>default cover photo</photo> is © <author>Jesús Roncero</author> used under the terms of <terms>CC-BY-SA 4.0</terms>.",
+         "twemoji": "The <twemoji>Twemoji</twemoji> emoji art is © <author>Twitter, Inc and other contributors</author> used under the terms of <terms>CC-BY 4.0</terms>.",
+         "twemoji_colr": "The <colr>twemoji-colr</colr> font is © <author>Mozilla Foundation</author> used under the terms of <terms>Apache 2.0</terms>."
+@@ -1101,11 +1102,11 @@
+         "hs_blocked": "This homeserver has been blocked by its administrator.",
+         "invalid_configuration_mixed_server": "Invalid configuration: a default_hs_url can't be specified along with default_server_name or default_server_config",
+         "invalid_configuration_no_server": "Invalid configuration: no default server specified.",
+-        "invalid_json": "Your Element configuration contains invalid JSON. Please correct the problem and reload the page.",
++        "invalid_json": "Your MiM configuration contains invalid JSON. Please correct the problem and reload the page.",
+         "invalid_json_detail": "The message from the parser is: %(message)s",
+         "invalid_json_generic": "Invalid JSON",
+         "mau": "This homeserver has hit its Monthly Active User limit.",
+-        "misconfigured": "Your Element is misconfigured",
++        "misconfigured": "Your MiM is misconfigured",
+         "mixed_content": "Can't connect to homeserver via HTTP when an HTTPS URL is in your browser bar. Either use HTTPS or <a>enable unsafe scripts</a>.",
+         "non_urgent_echo_failure_toast": "Your server isn't responding to some <a>requests</a>.",
+         "resource_limits": "This homeserver has exceeded one of its resource limits.",
+@@ -2897,7 +2898,29 @@
+             "message_search_unsupported_web": "%(brand)s can't securely cache encrypted messages locally while running in a web browser. Use <desktopLink>%(brand)s Desktop</desktopLink> for encrypted messages to appear in search results.",
+             "record_session_details": "Record the client name, version, and url to recognise sessions more easily in session manager",
+             "send_analytics": "Send analytics data",
+-            "strict_encryption": "Only send messages to verified users"
++            "strict_encryption": "Only send messages to verified users",
++            "lock_screen": {
++                "heading": "Lock screen",
++                "sub_heading": "Set pin",
++                "description": "Set a pin to be required after 2 minutes of inactivity.",
++                "configure_button": "Set pin",
++                "code_set": "There's currently a pin defined.",
++                "remove_button": "Remove pin",
++                "remaining_attempts_warning": "%(remainingAttempts)s attempt(s) remaining before lockout.",
++                "setup_pin_dialog": {
++                    "title": "Setup Pin",
++                    "initial": "Set the pin you want to protect your device.",
++                    "initial_warning": "NOTE: Make sure you have cross signing and key backup enabled. If you fail your pin, you will lose the current session.",
++                    "confirm": "Confirm your pin.",
++                    "incorrect": "Incorrect pin. Please start over.",
++                    "success": "Pin successfully set."
++                },
++                "remove_pin_dialog": {
++                    "title": "Remove Pin",
++                    "body": "Please confirm your pin to remove it.",
++                    "success": "Pin successfully removed."
++                }
++            }
+         },
+         "send_read_receipts": "Send read receipts",
+         "send_read_receipts_unsupported": "Your server doesn't support disabling sending read receipts.",
+@@ -3809,6 +3832,9 @@
+             }
+         }
+     },
++    "toolbar": {
++        "title": "Tools"
++    },
+     "truncated_list_n_more": {
+         "other": "And %(count)s more..."
+     },
+@@ -4036,7 +4062,7 @@
+         "you_are_presenting": "You are presenting"
+     },
+     "web_default_device_name": "%(appName)s: %(browserName)s on %(osName)s",
+-    "welcome_to_element": "Welcome to Element",
++    "welcome_to_element": "Welcome to MiM",
+     "widget": {
+         "added_by": "Widget added by",
+         "capabilities_dialog": {

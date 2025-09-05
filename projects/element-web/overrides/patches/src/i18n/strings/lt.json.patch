@@ -1,0 +1,25 @@
+--- 
++++ 
+@@ -617,11 +617,11 @@
+         "failed_copy": "Nepavyko nukopijuoti",
+         "hs_blocked": "Šis namų serveris buvo užblokuotas jo administratoriaus.",
+         "invalid_configuration_no_server": "Klaidinga konfigūracija: nenurodytas numatytasis serveris.",
+-        "invalid_json": "Jūsų Element konfigūracijoje yra klaidingas JSON. Ištaisykite problemą ir iš naujo įkelkite puslapį.",
++        "invalid_json": "Jūsų MiM konfigūracijoje yra klaidingas JSON. Ištaisykite problemą ir iš naujo įkelkite puslapį.",
+         "invalid_json_detail": "Analizatoriaus žinutė yra: %(message)s",
+         "invalid_json_generic": "Klaidingas JSON",
+         "mau": "Šis serveris pasiekė savo mėnesinį aktyvių vartotojų limitą.",
+-        "misconfigured": "Jūsų Element yra neteisingai sukonfigūruotas",
++        "misconfigured": "Jūsų MiM yra neteisingai sukonfigūruotas",
+         "mixed_content": "Neįmanoma prisijungti prie serverio per HTTP, kai naršyklės juostoje yra HTTPS URL. Naudokite HTTPS arba <a>įjunkite nesaugias rašmenas</a>.",
+         "non_urgent_echo_failure_toast": "Jūsų serveris neatsako į kai kurias <a>užklausas</a>.",
+         "resource_limits": "Šis serveris viršijo vieno iš savo išteklių limitą.",
+@@ -2317,7 +2317,7 @@
+         "voice_call": "Balso skambutis",
+         "you_are_presenting": "Jūs pristatote"
+     },
+-    "welcome_to_element": "Sveiki atvykę į Element",
++    "welcome_to_element": "Sveiki atvykę į MiM",
+     "widget": {
+         "added_by": "Valdiklį pridėjo",
+         "capabilities_dialog": {

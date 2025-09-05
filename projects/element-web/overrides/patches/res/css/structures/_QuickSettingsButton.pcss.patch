@@ -1,0 +1,19 @@
+--- 
++++ 
+@@ -32,14 +32,14 @@
+         mask-repeat: no-repeat;
+         mask-position: center;
+         mask-size: 24px;
+-        background: $secondary-content;
++        background: var(--cpd-color-icon-tertiary);
+     }
+ 
+     &:not(.expanded):hover {
+         background-color: $quaternary-content;
+ 
+         &::before {
+-            background-color: $primary-content;
++            background-color: var(--cpd-color-icon-primary);
+         }
+     }
+ }

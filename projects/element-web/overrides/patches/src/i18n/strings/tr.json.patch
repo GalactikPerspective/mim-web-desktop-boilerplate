@@ -1,0 +1,25 @@
+--- 
++++ 
+@@ -1049,11 +1049,11 @@
+         "hs_blocked": "Bu sunucu yöneticisi tarafından bloke edildi.",
+         "invalid_configuration_mixed_server": "Geçersiz yapılandırma: default_server_name veya default_server_config ile birlikte bir default_hs_url belirtilemiyor",
+         "invalid_configuration_no_server": "Geçersiz yapılandırma: varsayılan sunucu belirtilmedi.",
+-        "invalid_json": "Element yapılandırmanız geçersiz JSON içeriyor. Lütfen sorunu düzeltin ve sayfayı yeniden yükleyin.",
++        "invalid_json": "MiM yapılandırmanız geçersiz JSON içeriyor. Lütfen sorunu düzeltin ve sayfayı yeniden yükleyin.",
+         "invalid_json_detail": "Ayrıştırıcıdan gelen mesaj: %(message)s",
+         "invalid_json_generic": "Hatalı JSON",
+         "mau": "Bu ana sunucu Aylık Aktif Kullanıcı limitine ulaştı.",
+-        "misconfigured": "Elementiniz yanlış yapılandırılmış",
++        "misconfigured": "MiMiniz yanlış yapılandırılmış",
+         "mixed_content": "Tarayıcı çubuğunuzda bir HTTPS URL'si olduğunda Ana Sunusuna HTTP üzerinden bağlanılamıyor . Ya HTTPS kullanın veya <a> güvensiz komut dosyalarını</a> etkinleştirin.",
+         "non_urgent_echo_failure_toast": "Sunucunuz bası <a>istekler'e</a> onay vermiyor.",
+         "resource_limits": "Bu anasunucu kaynak limitlerinden birini aştı.",
+@@ -3890,7 +3890,7 @@
+         "you_are_presenting": "Sunum yapıyorsunuz"
+     },
+     "web_default_device_name": "%(appName)s: %(browserName)s %(osName)s",
+-    "welcome_to_element": "Element'e Hoş Geldiniz",
++    "welcome_to_element": "MiM'e Hoş Geldiniz",
+     "widget": {
+         "added_by": "Widget ekleyen",
+         "capabilities_dialog": {

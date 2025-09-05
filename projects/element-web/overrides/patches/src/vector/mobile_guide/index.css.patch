@@ -1,0 +1,22 @@
+--- 
++++ 
+@@ -6,6 +6,10 @@
+ */
+ 
+ @import url("@vector-im/compound-design-tokens/assets/web/css/compound-design-tokens.css");
++
++:root {
++    --cpd-color-text-action-accent: #e52a88; /* --mim-primary-5 */
++}
+ 
+ html {
+     min-height: 100%;
+@@ -153,8 +157,6 @@
+     width: 100vw;
+     height: 178px; /* Match the height of assets/bottom-gradient.svg so the gradient only stretches horizontally */
+     background-image: url("./assets/bottom-gradient.svg");
+-    background-size: 100% 100%;
+-    background-repeat: no-repeat;
+     z-index: -1;
+     margin-left: calc(50% - 50vw); /* Center the gradient regardless of body width */
+ }

@@ -1,0 +1,15 @@
+--- 
++++ 
+@@ -208,6 +208,12 @@
+     };
+ 
+     modules?: string[];
++
++    // Toolbar items for MiM
++    toolbar_items?: {
++        label: string;
++        url: string;
++    }[];
+ }
+ 
+ export interface ISsoRedirectOptions {

@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -35,7 +35,7 @@
+                 className="mx_ErrorView_logo"
+                 height="160"
+                 src="themes/element/img/logos/element-app-logo.png"
+-                alt="Element"
++                alt="MiM"
+             />
+             <div className="mx_ErrorView_container">
+                 <Heading size="md" weight="semibold">

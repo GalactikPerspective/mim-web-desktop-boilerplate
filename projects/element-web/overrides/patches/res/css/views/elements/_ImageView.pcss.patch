@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -104,7 +104,7 @@
+         mask-size: contain;
+         mask-position: center;
+         display: block;
+-        background-color: $icon-button-color;
++        background-color: var(--mim-secondary-1);
+     }
+ }
+ 

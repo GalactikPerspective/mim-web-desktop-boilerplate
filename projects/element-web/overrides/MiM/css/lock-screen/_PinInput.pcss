@@ -1,0 +1,32 @@
+.mim_PinInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    & .mim_PinInput_Row {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    & .mim_PinInput_Dot {
+        width: 25px;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        border: 1px solid var(--cpd-color-border-interactive-secondary);
+        margin: 3px;
+
+        &[data-active="true"] {
+            border-color: $accent;
+            background-color: $accent;
+        }
+    }
+}

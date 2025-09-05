@@ -1,0 +1,34 @@
+--- 
++++ 
+@@ -929,11 +929,11 @@
+         "failed_copy": "Kopiointi epäonnistui",
+         "hs_blocked": "Tämä kotipalvelin on ylläpitäjänsä estämä.",
+         "invalid_configuration_no_server": "Virheellinen asetus: oletuspalvelinta ei ole määritetty.",
+-        "invalid_json": "Element-asetuksesi sisältävät epäkelpoa JSONia. Korjaa ongelma ja lataa sivu uudelleen.",
++        "invalid_json": "MiM-asetuksesi sisältävät epäkelpoa JSONia. Korjaa ongelma ja lataa sivu uudelleen.",
+         "invalid_json_detail": "Viesti jäsentimeltä: %(message)s",
+         "invalid_json_generic": "Virheellinen JSON",
+         "mau": "Tämän kotipalvelimen kuukausittaisten aktiivisten käyttäjien raja on täynnä.",
+-        "misconfigured": "Elementisi asetukset ovat pielessä",
++        "misconfigured": "MiMisi asetukset ovat pielessä",
+         "mixed_content": "Yhdistäminen kotipalvelimeen HTTP:n avulla ei ole mahdollista, kun selaimen osoitepalkissa on HTTPS-osoite. Käytä joko HTTPS:ää tai <a>salli turvattomat komentosarjat</a>.",
+         "non_urgent_echo_failure_toast": "Palvelimesi ei vastaa joihinkin <a>pyyntöihin</a>.",
+         "resource_limits": "Tämä kotipalvelin on ylittänyt yhden rajoistaan.",
+@@ -2410,7 +2410,7 @@
+             "presence_description": "Jaa toimintasi ja tilasi muiden kanssa.",
+             "publish_timezone": "Julkaise aikavyöhyke julkisessa profiilissa",
+             "rm_lifetime": "Viestin luetuksi merkkaamisen kesto (ms)",
+-            "rm_lifetime_offscreen": "Viestin luetuksi merkkaamisen kesto, kun Element ei ole näkyvissä (ms)",
++            "rm_lifetime_offscreen": "Viestin luetuksi merkkaamisen kesto, kun MiM ei ole näkyvissä (ms)",
+             "room_directory_heading": "Huoneluettelo",
+             "room_list_heading": "Huoneluettelo",
+             "show_polls_button": "Näytä kyselypainike",
+@@ -3494,7 +3494,7 @@
+         "you_are_presenting": "Esität parhaillaan"
+     },
+     "web_default_device_name": "%(appName)s: %(browserName)s käyttöjärjestelmällä %(osName)s",
+-    "welcome_to_element": "Tervetuloa Element-sovellukseen",
++    "welcome_to_element": "Tervetuloa MiM-sovellukseen",
+     "widget": {
+         "added_by": "Sovelman lisäsi",
+         "capabilities_dialog": {

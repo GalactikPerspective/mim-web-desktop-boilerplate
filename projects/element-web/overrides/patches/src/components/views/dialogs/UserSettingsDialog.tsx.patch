@@ -1,0 +1,19 @@
+--- 
++++ 
+@@ -27,7 +27,6 @@
+ import TabbedView, { Tab, useActiveTabWithDefault } from "../../structures/TabbedView";
+ import { _t, _td } from "../../../languageHandler";
+ import AccountUserSettingsTab from "../settings/tabs/user/AccountUserSettingsTab";
+-import SettingsStore from "../../../settings/SettingsStore";
+ import LabsUserSettingsTab, { showLabsFlags } from "../settings/tabs/user/LabsUserSettingsTab";
+ import AppearanceUserSettingsTab from "../settings/tabs/user/AppearanceUserSettingsTab";
+ import SecurityUserSettingsTab from "../settings/tabs/user/SecurityUserSettingsTab";
+@@ -222,7 +221,7 @@
+             ),
+         );
+ 
+-        if (showLabsFlags() || SettingsStore.getFeatureSettingNames().some((k) => SettingsStore.getBetaInfo(k))) {
++        if (showLabsFlags()) {
+             tabs.push(
+                 new Tab(UserTab.Labs, _td("common|labs"), <LabsIcon />, <LabsUserSettingsTab />, "UserSettingsLabs"),
+             );

@@ -1,0 +1,24 @@
+--- 
++++ 
+@@ -106,11 +106,6 @@
+     if (devMode) {
+         // Embedded source maps for dev builds, can't use eval-source-map due to CSP
+         development["devtool"] = "inline-source-map";
+-    } else {
+-        // High quality source maps in separate .map files which include the source. This doesn't bulk up the .js
+-        // payload file size, which is nice for performance but also necessary to get the bundle to a small enough
+-        // size that sentry will accept the upload.
+-        development["devtool"] = "source-map";
+     }
+ 
+     // Resolve the directories for the js-sdk for later use. We resolve these early, so we
+@@ -276,6 +271,9 @@
+                         // When we do get to upgrade our current setup, this should
+                         // probably be removed.
+                         if (f.includes(path.join("@vector-im", "compound-web"))) return true;
++
++                        // Also include MiM stuff
++                        if (f.includes(path.resolve(__dirname, "MiM"))) return true;
+ 
+                         // but we can't run all of our dependencies through babel (many of them still
+                         // use module.exports which breaks if babel injects an 'include' for its

@@ -1,0 +1,20 @@
+--- 
++++ 
+@@ -143,6 +143,8 @@
+ import { sanitizeHtmlParams } from "../../Linkify";
+ import { isOnlyAdmin } from "../../utils/membership";
+ 
++import LockScreenProvider from "../../../MiM/src/lock-screen/LockScreenProvider";
++
+ // legacy export
+ export { default as Views } from "../../Views";
+ 
+@@ -2126,6 +2128,8 @@
+                     />
+                 );
+             }
++            // Apply the LockScreenProvider
++            view = <LockScreenProvider>{view}</LockScreenProvider>;
+         } else if (this.state.view === Views.WELCOME) {
+             view = <Welcome />;
+         } else if (this.state.view === Views.REGISTER && SettingsStore.getValue(UIFeature.Registration)) {
